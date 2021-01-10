@@ -15,7 +15,7 @@ public class CliClient {
     HelloService helloService;
 
     public void start() {
-        System.out.println("Enter processname like 'kafka-consumer': ");
+        System.out.println("Enter processname like 'process1': ");
         String processname = scannerArgumentResolver.argument(System.in);
         helloService.helloCli(processname);
     }
