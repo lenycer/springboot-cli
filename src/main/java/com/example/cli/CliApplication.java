@@ -22,6 +22,6 @@ public class CliApplication implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        cliClient.start();
+        cliClient.run();
     }
 }

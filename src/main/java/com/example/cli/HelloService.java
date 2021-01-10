@@ -1,11 +1,13 @@
 package com.example.cli;
 
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 
+@Slf4j
 @Component
 public class HelloService {
 
     public void helloCli(String processname) {
-        System.out.println("hello "+processname);
+        log.info("hello {}",processname);
     }
 }
